@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Login Form
+</title>
+<script type="text/javascript">
+function login()
+{
+var user=document.getElementById("username");
+switch(user)
+{
+ case "Sarath":
+       window.alert("Hello Sarath!!!");
+ break;
+ case "Ravi":
+       window.alert("Hello Ravi!!!");
+ break;
+ case "Kiran":
+       window.alert("Hello Kiran!!!");
+ break;
+ case "Suresh":
+       window.alert("Hello Suresh!!!");
+ break;
+ case "Shasank":
+       window.alert("Hello Shasank!!!");
+ break;
+ default:
+       window.alert("Please enter the correct username...");
+}
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="username" placeholder="Username"><br><br>
+<input type="button" value="Submit" onClick="login()">
+</form>
+</body>
+</html>
