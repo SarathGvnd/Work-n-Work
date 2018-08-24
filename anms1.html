@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Animations</title>
+<style type="text/css" media="all">
+*
+{
+ margin:0;
+ padding:0;
+}
+.spinner1
+{
+ position:absolute;
+ top:200px;
+ left:200px;
+ width:100px;
+ height:100px;
+ background-color:transparent;
+ border-radius:50%;
+ border-left:5px solid transparent;
+ border-right:5px solid transparent;
+ border-top:5px solid orangered;
+ border-bottom:5px solid orangered;
+ animation:spin1 1s linear infinite;
+}
+@keyframes spin1
+{
+ 0%
+ {
+  transform:rotate(0deg);
+ }
+ 50%
+ {
+  transform:rotate(45deg);
+ }
+ 100%
+ {
+  transform:rotate(360deg);
+ }
+}
+
+
+.spinner2
+{
+ position:absolute;
+ top:200px;
+ left:350px;
+ width:100px;
+ height:100px;
+ background-color:yellow;
+ border-radius:50%;
+ border-top:5px solid green;
+ border-bottom:5px solid green;
+ animation:spin2 2s linear infinite;
+}
+@keyframes spin2
+{
+ 0%
+ {
+  transform:rotate(0deg);
+ }
+ 50%
+ {
+  transform:rotate(45deg);
+ }
+ 100%
+ {
+  transform:rotate(360deg);
+ }
+}
+
+
+
+.spinner3
+{
+ position:absolute;
+ top:200px;
+ left:500px;
+ width:100px;
+ height:100px;
+ background-color:lightgreen;
+ border-radius:50%;
+ border-top:5px solid blue;
+ border-bottom:5px solid blue;
+ animation:spin3 1s linear infinite;
+}
+@keyframes spin3
+{
+ 0%
+ {
+  transform:rotate(0deg) scale(1);
+ }
+ 50%
+ {
+  transform:rotate(90deg) scale(1.4);
+ }
+ 100%
+ {
+  transform:rotate(360deg) scale(1);
+ }
+}
+
+
+
+
+
+.spinner4
+{
+ position:absolute;
+ top:200px;
+ left:700px;
+ width:100px;
+ height:100px;
+ background-color:transparent;
+ border-radius:50%;
+}
+.one
+{
+ position:absolute;
+ top:calc(50% - 5px);
+ left:calc(50% - 5px);
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background-color:red;
+ animation:bounce1 1s linear infinite;
+}
+@keyframes bounce1
+{
+ 0%
+ {
+  transform:translate(0,0);
+ }
+ 100%
+ {
+  transform:translateY(50px);
+ }
+}
+.two
+{
+ position:absolute;
+ top:calc(50% - 5px);
+ left:calc(50% - 5px);
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background-color:blue;
+ animation:bounce2 1s linear infinite;
+}
+@keyframes bounce2
+{
+ 0%
+ {
+  transform:translate(0,0);
+ }
+ 100%
+ {
+  transform:translateY(-50px);
+ }
+}
+.three
+{
+ position:absolute;
+ top:calc(50% - 5px);
+ left:calc(50% - 5px);
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background-color:green;
+ animation:bounce3 1s linear infinite;
+}
+@keyframes bounce3
+{
+ 0%
+ {
+  transform:translate(0,0);
+ }
+ 100%
+ {
+  transform:translateX(50px);
+ }
+}
+.four
+{
+ position:absolute;
+ top:calc(50% - 5px);
+ left:calc(50% - 5px);
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background-color:darkviolet;
+ animation:bounce4 1s linear infinite;
+}
+@keyframes bounce4
+{
+ 0%
+ {
+  transform:translate(0,0);
+ }
+ 100%
+ {
+  transform:translateX(-50px);
+ }
+}
+!--.five
+{
+ position:absolute;
+ top:calc(50% - 5px);
+ left:calc(50% - 5px);
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background-color:violet;
+ animation:bounce5 1s linear infinite;
+}
+@keyframes bounce5
+{
+ 0%
+ {
+  transform:translate(0,0);
+ }
+ 100%
+ {
+  transform:translateZ(50px);
+ }
+}
+--!
+
+
+.spinner5
+{
+ position:fixed;
+ top:900px;
+ left:50px;
+ width:100px;
+ height:100px;
+ background-color:#999999;
+ border-radius:50%;
+ display:block;
+}
+</style>
+</head>
+<body>
+
+<div class="spinner1">
+</div>
+<div class="spinner2">
+</div>
+<div class="spinner3">
+</div>
+<div class="spinner4">
+ <div class="one"></div>
+ <div class="two"></div>
+ <div class="three"></div>
+ <div class="four"></div>
+<div class="five"></div>
+ <div class="six"></div>
+</div>
+
+<div class="spinner5">
+</div>
+</body>
+</html>

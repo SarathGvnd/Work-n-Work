@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Navdemo
+</title>
+<style type="text/css" media="all">
+*
+{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+html,body
+{
+ height:100%;
+ width:100%;
+}
+ul
+{
+ position:relative;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ list-style-type:none;
+ float:left;
+ background:#19B5FE;
+ text-align:center;
+}
+li
+{
+ float:left;
+ width:125px;
+}
+li a
+{
+ position:relative;
+ text-decoration:none;
+ color:white;
+ font-family:Helvetica;
+ font-weight:bold;
+ font-size:18px;
+ line-height:50px;
+ display:inline-block;
+}
+li a::before
+{
+ content:"";
+ display:block;
+ position:absolute;
+ top:8px;
+ left:0px;
+ width:0;
+ height:3px;
+ background:orange;
+ transition:width .8s;
+}
+li a::after
+{
+ content:"";
+ display:block;
+ position:absolute;
+ bottom:8px;
+ right:0px;
+ width:0;
+ height:3px;
+ background:orange;
+ transition:width .8s;
+}
+li a:hover::before
+{
+ width:100%;
+}
+li a:hover::after
+{
+ width:100%;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="">Products</a></li>
+<li><a href="">Gallery</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Contact</a></li>
+</ul>
+</body>
+</html>

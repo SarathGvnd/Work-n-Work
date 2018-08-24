@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Form data
+</title>
+</head>
+<body>
+<form action="f2.html" target="_blank">
+    <p>Enter your name</p>
+    <input id="tbName" type="text">
+    <input type="submit" value="Submit" onclick="callme()">
+</form>
+<script>
+    function callme(){
+        var name = document.getElementById('tbName').value;
+        sessionStorage.setItem('userName', name);
+    }
+</script>
+</body>
+</html>

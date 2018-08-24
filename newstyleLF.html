@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loginform with Moving Label</title>
+<style type="text/css" media="all">
+*
+{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+html,body
+{
+ height:100%;
+ width:100%;
+}
+.loginbox
+{
+ position:relative;
+ width:300px;
+ height:400px;
+ top:calc(50% - 200px);
+ left:calc(50% - 150px);
+ background:#19B5FE;
+ padding:30px;
+ border-radius:10px;
+}
+.loginbox h2
+{
+ color:orange;
+ text-align:center;
+ margin-bottom:40px;
+ font-family:Helvetica;
+ font-weight:bold;
+} 
+.loginbox .field
+{
+ position:relative;
+}
+.loginbox .field input
+{
+ width:100%;
+ margin-bottom:40px;
+ border:none;
+ border-bottom:1px solid white;
+ outline:none;
+ background:transparent;
+ padding:5px;
+ color:white;
+ font-family:Helvetica;
+ font-weight:bold;
+ font-size:14px;
+ transition:border-bottom .5s;
+}
+.loginbox .field label
+{
+ position:absolute;
+ top:0;
+ left:0;
+ color:white;
+ font-family:Helvetica;
+ font-weight:bold;
+ font-size:15px;
+ pointer-events:none;
+ transition:.5s;
+}
+.loginbox .field input:focus ~ label,
+.loginbox .field input:valid ~ label
+{
+ top:-16px;
+ font-size:12px;
+ color:green;
+}
+.loginbox .field input:focus
+{
+ border-bottom:1px solid green;
+}
+.loginbox button
+{
+ width:100%;
+ margin-bottom:30px;
+ border:none;
+ border-radius:10px;
+ outline:none;
+ color:white;
+ font-family:Helvetica;
+ font-weight:bold;
+ font-size:15px;
+ padding:10px;
+ cursor:pointer;
+ background:#1F3A93;
+ transition:background .5s;
+}
+.loginbox button:hover
+{
+ background:green;
+}
+</style>
+</head>
+<body>
+<div class="loginbox">
+<h2>LOGIN HERE</h2>
+<form>
+<div class="field">
+<input type="text" id="email" required="" autocomplete="on">
+<label for="email">Email id</label>
+</div>
+<div class="field">
+<input type="password" id="pswd" required="" maxlength="8">
+<label for="pswd">Password</label>
+</div> 
+<button type="submit">Submit</button>
+<button type="reset" onclick="reset()">Clear</button>
+</div>
+</form>
+</body>
+</html>
