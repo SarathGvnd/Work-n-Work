@@ -1,0 +1,25 @@
+
+
+RewriteEngine on
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+
+RewriteRule ^home home.php [NC,L]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+
+RewriteRule ^welcome welcome.php [NC,L]
+
+
+
